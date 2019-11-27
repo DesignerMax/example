@@ -8,6 +8,7 @@ namespace kandc.Models
     public class Lab1Data
     {
         public Guid Id { get; set; } = Guid.Empty;
+		
         public string brandphone { get; set; }
 
 public string model { get; set; }
