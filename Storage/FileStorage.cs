@@ -50,6 +50,7 @@ namespace kandc.Storage
             }
         }
         
+		
         private void Flush()
         {
             var serializedContents = JsonConvert.SerializeObject(All);
