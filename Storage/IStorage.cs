@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 
+
 namespace kandc.Storage
 {
     public interface IStorage<T> where T : class

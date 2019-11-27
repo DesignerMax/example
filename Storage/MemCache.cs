@@ -37,6 +37,7 @@ namespace kandc.Storage
             }
         }
 
+		
         public System.Collections.Generic.List<Lab1Data> All => _memCache.Select(x => x).ToList();
 
         public void Add(Lab1Data value)
