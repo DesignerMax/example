@@ -7,6 +7,7 @@ namespace kandc.Storage
         FileStorage
     }
 
+	
     public static class StorageEnumExtensions
     {
         public static StorageEnum ToStorageEnum(this string value)
