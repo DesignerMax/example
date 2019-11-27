@@ -6,6 +6,8 @@ using System.Linq;
 using System.Threading.Tasks; 
 using System.Reflection; 
 
+namespace kandc.Controllers
+{
 [Route("api/[controller]")] 
 [ApiController] 
 public class VersionController : ControllerBase 
@@ -23,3 +25,4 @@ public class VersionController : ControllerBase
 
            return Ok(versionInfo);
        }}
+}
