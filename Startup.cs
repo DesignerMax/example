@@ -14,7 +14,6 @@ using kandc.Models;
 using kandc.Storage;
 using Serilog;
 
-
 namespace kandc
 {
     public class Startup
