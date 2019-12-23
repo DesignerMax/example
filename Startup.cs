@@ -12,11 +12,22 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using kandc.Models;
 using kandc.Storage;
+using Serilog;
+
 
 namespace kandc
 {
     public class Startup
-    {
+    { private void ConfigureLogger()
+       {
+           var log = new LoggerConfiguration()
+               .WriteTo.Console()
+               .WriteTo.File("logs\\kandc.log", rollingInterval: RollingInterval.Day)
+               .CreateLogger();
+ 
+           Log.Logger = log;
+       }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -28,7 +39,7 @@ namespace kandc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
+            ConfigureLogger();
             switch (Configuration["Storage:Type"].ToStorageEnum())
             {
                 case StorageEnum.MemCache:
