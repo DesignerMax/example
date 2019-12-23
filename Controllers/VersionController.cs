@@ -5,7 +5,7 @@ using kandc.Models;
 using System.Linq; 
 using System.Threading.Tasks; 
 using System.Reflection; 
-using Serilog
+using Serilog;
 
 namespace kandc.Controllers
 {
