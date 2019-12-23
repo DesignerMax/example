@@ -7,16 +7,7 @@
 <Company>StudyWork</Company>
 <Product>MyLab2</Product>
 <PackageId>MyApp</PackageId>
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-
-=======
-<FileVersion>0.0.1</FileVersion>
->>>>>>> feature/Kovalev/gitversion
-=======
-
->>>>>>> feature/Kovalev/gitversion
   </PropertyGroup>
 
   <ItemGroup>
