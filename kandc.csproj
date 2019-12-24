@@ -14,7 +14,6 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
-  
   <ItemGroup>
     <PackageReference Include="GitVersionTask" Version="5.1.2">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
