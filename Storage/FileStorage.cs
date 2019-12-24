@@ -49,7 +49,7 @@ namespace kandc.Storage
                 }
             }
         }
-        
+        public string StorageType => $"{nameof(FileStorage)}";
 		
         private void Flush()
         {
